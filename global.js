@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .attr("viewBox", "0 0 1000 600")
       .attr("preserveAspectRatio", "xMidYMid meet");
     
-    d3.csv("/data/participants_info.csv").then(data => {
+    d3.csv("data/participants_info.csv").then(data => {
       const cleanData = data.filter(d => {
         const reAcuity = parseFloat(d.va_re_logMar);
         const leAcuity = parseFloat(d.va_le_logMar);
