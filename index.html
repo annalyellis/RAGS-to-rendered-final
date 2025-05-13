@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Website</title>
+  <title>Visual Acuity Comparison</title>
   <link rel="stylesheet" href="/style.css" />
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="global.js" defer></script> 
@@ -140,7 +140,7 @@
 <body>
   <div class="container">
     <h1>Visual Acuity Comparison</h1>
-    <h3>Right Eye vs Left Eye Across Different Diagnoses</h3>
+    <h3>Left Eye vs Right Eye Across Different Diagnoses</h3>
     
     <div class="acuity-scale">
       <div>
@@ -190,20 +190,21 @@
     
     <div id="chart" class="chart-container"></div>
     
-    <div class="legend">
+    <div id="legend" class="legend">
       <div class="legend-item">
-        <div class="legend-color" style="background-color: #4e79a7;"></div>
-        <span>Right Eye</span>
+        <div class="legend-color" style="background-color: #4CAF50;"></div>
+        <span>Left Eye</span>
       </div>
       <div class="legend-item">
-        <div class="legend-color" style="background-color: #f28e2c;"></div>
-        <span>Left Eye</span>
+        <div class="legend-color" style="background-color: #e74c3c;"></div>
+        <span>Right Eye</span>
       </div>
     </div>
     
     <div class="info-box">
-      <p><strong>About this visualization:</strong> This chart compares visual acuity measurements between right and left eyes across different eye diagnoses. Visual acuity is measured in logMAR units, where lower values represent better vision (0.0 is equivalent to 20/20 vision, negative values are better than 20/20, and higher positive values indicate worse vision).</p>
+      <p><strong>About this visualization:</strong> This chart compares visual acuity measurements between left and right eyes across different eye diagnoses. Visual acuity is measured in logMAR units, where lower values represent better vision (0.0 is equivalent to 20/20 vision, negative values are better than 20/20, and higher positive values indicate worse vision).</p>
       <p>The data shown represents average values for each diagnosis. You can switch between different view modes and filter by specific diagnoses using the controls above.</p>
+      <p>The vertical lines with caps (error bars) represent Standard Error (SE), which indicates the precision of the mean estimate. Smaller error bars suggest more reliable average measurements.</p>
       <p class="disclaimer">Note: Only diagnoses with sufficient data points are displayed. Some patients may have multiple diagnoses.</p>
     </div>
   </div>
