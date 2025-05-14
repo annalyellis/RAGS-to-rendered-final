@@ -305,7 +305,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
       svg.append("text")
         .attr("x", 500)
-        .attr("y", 620)
+        .attr("y", 630)
         .attr("text-anchor", "middle")
         .style("font-size", "12px")
         .text("Vertical lines represent Standard Error (SE) - a measure of the precision of the mean estimate");
