@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
       legendDiv.style.display = "block";
       
-      const margin = { top: 40, right: 30, bottom: 160, left: 60 };
+      const margin = { top: 40, right: 30, bottom: 180, left: 60 };
       const width = 1000 - margin.left - margin.right;
       const height = 600 - margin.top - margin.bottom;
       
@@ -305,7 +305,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
       svg.append("text")
         .attr("x", 500)
-        .attr("y", 630)
+        .attr("y", 600)
         .attr("text-anchor", "middle")
         .style("font-size", "12px")
         .text("Vertical lines represent Standard Error (SE) - a measure of the precision of the mean estimate");
